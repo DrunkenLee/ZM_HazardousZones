@@ -5,7 +5,6 @@ local function onServerCommand(module, command, arguments)
     if module ~= "HazardousZones" then return end
     if isServer() then return end
 
-    print(string.format("[HZ_SERVER_CMD] command=%s", command))
 
     if command == "RemoteRemovePlayerExposure" then
         if getPlayer():getUsername() == arguments.remotePlayer then

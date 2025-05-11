@@ -36,15 +36,15 @@ end
 function HZMeasureBodyRadiationAction:perform()
     self.item:getContainer():setDrawDirty(true);
     self.item:setJobDelta(0.0);
-    
+
     if self.item:getType() == "HZMilitaryGeiger" then
         self.item:setUsedDelta(self.item:getUsedDelta() - 0.1)
     else
         self.item:Use();
         self.item:setUsedDelta(self.item:getUsedDelta() - 0.2)
     end
-    -- 
-    
+    --
+
 
     local exposure = HZ:getPlayerExposures().radiation or 0
 
@@ -58,14 +58,14 @@ function HZMeasureBodyRadiationAction:perform()
 
     if d100 <= interferenceChance then
         local interference = ZombRand(
-            HZMakeshiftBodyRadiationDetectorSettings.MeasurementInterferenceMin, 
+            HZMakeshiftBodyRadiationDetectorSettings.MeasurementInterferenceMin,
             HZMakeshiftBodyRadiationDetectorSettings.MeasurementInterferenceMax
         );
-        
+
         exposure = exposure + interference
 
-        if isDebugEnabled() then 
-            print("[BODY RADIATION MEASUREMENT] Using interference, value="..tostring(interference)..", exposureModValue="..tostring(exposure))
+        if isDebugEnabled() then
+
         end
     end
 
@@ -82,12 +82,12 @@ function HZMeasureBodyRadiationAction:new (character, item, time)
     o.item = item;
     o.stopOnWalk = true;
     o.stopOnRun = true;
-    
-    if o.character:isTimedActionInstant() then 
-        o.maxTime = 1; 
-    else 
+
+    if o.character:isTimedActionInstant() then
+        o.maxTime = 1;
+    else
         o.maxTime = time;
     end
-    
+
     return o
 end
