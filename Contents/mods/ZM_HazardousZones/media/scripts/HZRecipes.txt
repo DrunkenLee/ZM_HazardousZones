@@ -143,69 +143,6 @@ module HazardousZones {
         StopOnWalk: false
     }
 
-    recipe HZPutIodinePillToBottle
-    {
-        destroy HZIodinePillSingle,
-        destroy HZIodinePillsBottle,
-        
-        Result:HZIodinePillsBottle,
-        Time:15.0,
-        Category:Health,
-        OnTest:HazardousZones.OnTest.HZIodinePillsBottleAdd,
-        OnCreate:HazardousZones.OnCreate.HZIodinePillsBottleAdd,
-        StopOnWalk:false
-    }
-
-    recipe HZTakeIodinePillFromBottle
-    {
-        HZIodinePillsBottle,
-
-        Result:HZIodinePillSingle,
-        Time:15.0,
-        Category:Health,
-        OnTest:HazardousZones.OnTest.HZIodinePillsBottleRemove,
-        OnCreate:HazardousZones.OnCreate.HZIodinePillsBottleRemove,
-        StopOnWalk:false
-    }
-
-    recipe HZTakeToxiguardPillFromBlisterPack
-    {
-        HZToxiguardPack,
-
-        Result:HZToxiguardPillSingle,
-        Time:15.0,
-        Category:Health,
-        OnTest:HazardousZones.OnTest.HZToxiguardPackRemove,
-        OnCreate:HazardousZones.OnCreate.HZToxiguardPackRemove,
-        StopOnWalk:false
-    }
-
-    recipe HZMakeIodinePowder
-    {
-        keep MortarPestle,
-        HZIodinePillSingle=5,
-
-        Result:HZIodidePowder,
-        Time:60.0,
-        Category:Health,
-    }
-
-    recipe HZMakeKILiquidMixture
-    {
-        keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
-        Bowl,
-        HZIodidePowder,    
-    
-        [Recipe.GetItemTypes.Milk];4,
-        Water=4,
-
-        Result:HZKILiquidMixture,
-        Time:60.0,
-        Category:Health,
-        SkillRequired:Doctor=2,
-        NeedToBeLearn:true,
-    }
-
     recipe HZExtractAmericiumFromSmokeDetector
     {
         HZSmokeDetector/HZSmokeDetectorBroken,
@@ -226,19 +163,6 @@ module HazardousZones {
         Sound:Dismantle,
     }
 
-    /* recipe HZExtractPlasticCasingFromDevice
-    {
-        Radio.WalkieTalkie1/Radio.WalkieTalkie2/Radio.WalkieTalkie3/Radio.WalkieTalkie4/Radio.WalkieTalkie5,
-        keep [Recipe.GetItemTypes.Screwdriver],
-        keep Tweezers,
-
-        Result:HZDevicePlasticCasing,
-        Time:600.0,
-        Category:Electrical,
-        SkillRequired:Electricity=2,
-        NeedToBeLearn:true,
-        StopOnWalk:true
-    } */
 
     recipe HZExtractTwoWayRadioComponents
     {
@@ -331,29 +255,6 @@ module HazardousZones {
         OnCreate:HazardousZones.OnCreate.HZWorkWithRadioactiveMaterial,
     }
 
-    recipe HZCreateMakeshiftBodyRadiationDetector
-    {
-        HZOneLineLCD=1,
-        HZBasicRadiationSensor=1,
-        HZDevicePlasticCasing=1,
-        destroy Battery=2,
-        keep [Recipe.GetItemTypes.Screwdriver],
-        keep HZSolderingIron,
-        keep Tweezers,
-        keep Glasses_SafetyGoggles,
-
-        NoBrokenItems:true,
-        Result:HZMakeshiftBodyRadiationDetector,
-        Time: 1600.0,
-        SkillRequired:Electricity=4,
-        NeedToBeLearn:true,
-        Category:Electrical,
-        AnimNode:Disassemble,
-        Prop1:Screwdriver,
-        Prop2:ElectronicsScrap,
-        Sound:Dismantle,
-        OnCreate:HazardousZones.OnCreate.HZWorkWithRadioactiveMaterial,
-    }
 
     recipe HZAttachSolderingIronToSpear
     {

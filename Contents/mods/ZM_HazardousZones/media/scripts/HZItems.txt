@@ -2,7 +2,7 @@ module HazardousZones {
     imports {
         Base
     }
-    
+
     /* ------------------------------ Edible medicines or its crafting materials ------------------------------ */
 
     item HZIodinePillSingle
@@ -213,7 +213,7 @@ module HazardousZones {
         DisappearOnUse    = FALSE,
         UsesBattery       = TRUE,
         ActivatedItem     = TRUE,
-        UseDelta          = 0.001, 
+        UseDelta          = 0.001,
         primaryAnimMask   = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         AttachmentType    = Walkie,
@@ -233,7 +233,7 @@ module HazardousZones {
         DisappearOnUse    = FALSE,
         UsesBattery       = TRUE,
         ActivatedItem     = TRUE,
-        UseDelta          = 0.001, 
+        UseDelta          = 0.001,
         primaryAnimMask   = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         AttachmentType    = Walkie,
@@ -253,7 +253,7 @@ module HazardousZones {
         DisappearOnUse    = FALSE,
         UsesBattery       = TRUE,
         ActivatedItem     = TRUE,
-        UseDelta          = 0.0005, 
+        UseDelta          = 0.0005,
         primaryAnimMask   = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         AttachmentType    = Walkie,
@@ -272,7 +272,7 @@ module HazardousZones {
         DisappearOnUse    = FALSE,
         UsesBattery       = TRUE,
         ActivatedItem     = TRUE,
-        UseDelta          = 0.00025, 
+        UseDelta          = 0.00025,
         primaryAnimMask   = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         AttachmentType    = Walkie,
@@ -291,7 +291,7 @@ module HazardousZones {
         DisappearOnUse    = FALSE,
         UsesBattery       = TRUE,
         ActivatedItem     = TRUE,
-        UseDelta          = 0.00025, 
+        UseDelta          = 0.00025,
         primaryAnimMask   = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         AttachmentType    = Walkie,
