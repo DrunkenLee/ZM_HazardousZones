@@ -10,9 +10,9 @@ local HZData     = HazardousZones.Data
 
 local function calculateDamageByExposures()
     local playerExposures = HZ:getPlayerExposures()
-    
+
     if not playerExposures then return end
-    
+
     for hazardType, exposureValue in pairs(playerExposures) do
         local exposureEffectData = HZUtils:getEffectByExposure(hazardType, exposureValue)
         if (exposureEffectData == nil) then
@@ -26,7 +26,7 @@ local function calculateDamageByExposures()
             end
             HZ:executeEffect(exposureEffectData.effect)
         else
-            -- no need to do anything 
+            -- no need to do anything
         end
     end
 end
@@ -93,13 +93,13 @@ local function onInitGlobalModData()
     end
 end
 
-local function onClothingUpdated(player) 
+local function onClothingUpdated(player)
     if HZUtils:isPlayerUseGasMask(player) then
         HZ:setGasMaskMoodle(1)
     else
         HZ:setGasMaskMoodle(0.5)
     end
-    
+
     if HZUtils:isPlayerUseHazmatSuit(player) then
         HZ:setHazmatSuitMoodle(1)
     else

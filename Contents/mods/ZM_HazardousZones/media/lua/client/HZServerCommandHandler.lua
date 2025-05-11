@@ -22,8 +22,6 @@ local function onServerCommand(module, command, arguments)
 end
 
 local function onReceiveGlobalModData(modDataName, data)
-    print("[HZ_RECEIVE_GLOBAL_MOD_DATA] name="..modDataName);
-    
     if modDataName == "HZ.Zones" then
         HZData.Zones = data
     elseif modDataName == "HZ.RndZones" then
