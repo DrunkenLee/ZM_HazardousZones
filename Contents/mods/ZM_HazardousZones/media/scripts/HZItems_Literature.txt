@@ -1,0 +1,49 @@
+module HazardousZones {
+    item HZNuclearMag1
+    {
+        DisplayCategory  = SkillBook,
+        Weight           = 0.1,
+        Type             = Literature,
+        DisplayName      = Nuclear Nomad's Guide I: Crafting DIY Body Radiation Detectors for Survival,
+        Icon             = HZNuclearMag1,
+        TeachedRecipes   = HZExtractAmericiumFromSmokeDetector;HZExtractTwoWayRadioComponents;HZDismantleDetectorItems,
+        ReplaceOnUse     = HZNuclearMag1,
+        WorldStaticModel = HZNuclearMag1_Ground,
+    }
+    
+    item HZNuclearMag2
+    {
+        DisplayCategory  = SkillBook,
+        Weight           = 0.1,
+        Type             = Literature,
+        DisplayName      = Nuclear Nomad's Guide II: Crafting DIY Body Radiation Detectors for Survival,
+        Icon             = HZNuclearMag2,
+        TeachedRecipes   = HZCreateSimpleCircuit;HZCreateBasicRadiationSensor,
+        ReplaceOnUse     = HZNuclearMag2,
+        WorldStaticModel = HZNuclearMag2_Ground,
+    }
+    
+    item HZNuclearMag3
+    {
+        DisplayCategory  = SkillBook,
+        Weight           = 0.1,
+        Type             = Literature,
+        DisplayName      = Nuclear Nomad's Guide III: Crafting DIY Body Radiation Detectors for Survival,
+        Icon             = HZNuclearMag3,
+        TeachedRecipes   = HZCreateMakeshiftBodyRadiationDetector,
+        ReplaceOnUse     = HZNuclearMag3,
+        WorldStaticModel = HZNuclearMag3_Ground,
+    }
+    
+    item HZNuclearMag4
+    {
+        DisplayCategory  = SkillBook,
+        Weight           = 0.1,
+        Type             = Literature,
+        DisplayName      = RadSafe Remedies: Crafting Radiation Protective Medicines,
+        Icon             = HZNuclearMag4,
+        TeachedRecipes   = HZMakeKILiquidMixture,
+        ReplaceOnUse     = HZNuclearMag4,
+        WorldStaticModel = HZNuclearMag4_Ground,
+    }
+}

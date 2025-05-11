@@ -1,0 +1,29 @@
+module HazardousZones {
+    model HZNuclearMag1_Ground
+    {
+        mesh    = WorldItems/Magazine,
+        texture = WorldItems/HZNuclearMag1_Ground,
+        scale   = 0.4,
+    }
+
+    model HZNuclearMag2_Ground
+    {
+        mesh    = WorldItems/Magazine,
+        texture = WorldItems/HZNuclearMag2_Ground,
+        scale   = 0.4,
+    }
+
+    model HZNuclearMag3_Ground
+    {
+        mesh    = WorldItems/Magazine,
+        texture = WorldItems/HZNuclearMag3_Ground,
+        scale   = 0.4,
+    }
+    
+    model HZNuclearMag4_Ground
+    {
+        mesh    = WorldItems/Magazine,
+        texture = WorldItems/HZNuclearMag4_Ground,
+        scale   = 0.4,
+    }
+}

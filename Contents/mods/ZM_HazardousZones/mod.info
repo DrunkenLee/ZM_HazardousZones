@@ -1,0 +1,10 @@
+name=Hazardous Zones
+poster=poster.png
+icon=poster-mini.png
+tags=Radiation, BioHazard, Zones, Hard mode, Realism
+id=HazardousZones
+authors=IamWarhead
+description=With this mod you can create hazardous zones all over Knox Country. Get a Geiger counter, protect yourself from radiation with various medicines or use nothing and make the game even more challenging.
+require=MoodleFramework
+url=https://github.com/IamWarHead/HazardousZonesWiki/wiki
+modVersion=1.2.4

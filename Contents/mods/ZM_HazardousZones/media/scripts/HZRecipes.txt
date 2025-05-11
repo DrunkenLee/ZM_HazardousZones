@@ -1,0 +1,390 @@
+module HazardousZones {
+    recipe Insert Battery into DP-5V
+    {
+        destroy HZChernoGeiger,
+        destroy Battery,
+
+        Result:HZChernoGeiger,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZChernoGeigerBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZChernoGeigerBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe Insert Battery into FX-300-GC
+    {
+        destroy HZCivilianGeiger,
+        destroy Battery,
+
+        Result:HZCivilianGeiger,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZCivilianGeigerBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZCivilianGeigerBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromChernoGeiger
+    {
+        keep HZChernoGeiger,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZChernoGeigerBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZChernoGeigerBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromCivilianGeiger
+    {
+        keep HZCivilianGeiger,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZCivilianGeigerBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZCivilianGeigerBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe Insert Battery into BD-GCA07-V
+    {
+        destroy HZIndustrialGeiger,
+        destroy Battery=2,
+
+        Result:HZIndustrialGeiger,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZIndustrialGeigerBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZIndustrialGeigerBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromIndustrialGeiger
+    {
+        keep HZIndustrialGeiger,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZIndustrialGeigerBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZIndustrialGeigerBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe Insert Battery into GCMIL-9000
+    {
+        destroy HZMilitaryGeiger,
+        destroy Battery=4,
+
+        Result:HZMilitaryGeiger,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZMilitaryGeigerBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZMilitaryGeigerBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromMilitaryGeiger
+    {
+        keep HZMilitaryGeiger,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZMilitaryGeigerBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZMilitaryGeigerBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe Insert Battery into M-207
+    {
+        destroy HZMultiGasDetector,
+        destroy Battery=4,
+
+        Result:HZMultiGasDetector,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZMultiGasDetectorBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZMultiGasDetectorBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromMultiGasDetector
+    {
+        keep HZMultiGasDetector,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZMultiGasDetectorBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZMultiGasDetectorBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe HZInsertBatteryIntoMakeshiftBodyRadiationDetector
+    {
+        destroy HZMakeshiftBodyRadiationDetector,
+        destroy Battery=2,
+
+        Result:HZMakeshiftBodyRadiationDetector,
+        Time:50.0,
+        OnTest:HazardousZones.OnTest.HZMakeshiftBodyRadiationDetectorBatteryInsert,
+        OnCreate:HazardousZones.OnCreate.HZMakeshiftBodyRadiationDetectorBatteryInsert,
+        StopOnWalk: false
+    }
+
+    recipe HZRemoveBatteriesFromMakeshiftBodyRadiationDetector
+    {
+        keep HZMakeshiftBodyRadiationDetector,
+
+        Result:Battery,
+        Time:50.0,
+        Category:Electrical,
+        OnTest:HazardousZones.OnTest.HZMakeshiftBodyRadiationDetectorBatteryRemove,
+        OnCreate:HazardousZones.OnCreate.HZMakeshiftBodyRadiationDetectorBatteryRemove,
+        StopOnWalk: false
+    }
+
+    recipe HZPutIodinePillToBottle
+    {
+        destroy HZIodinePillSingle,
+        destroy HZIodinePillsBottle,
+        
+        Result:HZIodinePillsBottle,
+        Time:15.0,
+        Category:Health,
+        OnTest:HazardousZones.OnTest.HZIodinePillsBottleAdd,
+        OnCreate:HazardousZones.OnCreate.HZIodinePillsBottleAdd,
+        StopOnWalk:false
+    }
+
+    recipe HZTakeIodinePillFromBottle
+    {
+        HZIodinePillsBottle,
+
+        Result:HZIodinePillSingle,
+        Time:15.0,
+        Category:Health,
+        OnTest:HazardousZones.OnTest.HZIodinePillsBottleRemove,
+        OnCreate:HazardousZones.OnCreate.HZIodinePillsBottleRemove,
+        StopOnWalk:false
+    }
+
+    recipe HZTakeToxiguardPillFromBlisterPack
+    {
+        HZToxiguardPack,
+
+        Result:HZToxiguardPillSingle,
+        Time:15.0,
+        Category:Health,
+        OnTest:HazardousZones.OnTest.HZToxiguardPackRemove,
+        OnCreate:HazardousZones.OnCreate.HZToxiguardPackRemove,
+        StopOnWalk:false
+    }
+
+    recipe HZMakeIodinePowder
+    {
+        keep MortarPestle,
+        HZIodinePillSingle=5,
+
+        Result:HZIodidePowder,
+        Time:60.0,
+        Category:Health,
+    }
+
+    recipe HZMakeKILiquidMixture
+    {
+        keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+        Bowl,
+        HZIodidePowder,    
+    
+        [Recipe.GetItemTypes.Milk];4,
+        Water=4,
+
+        Result:HZKILiquidMixture,
+        Time:60.0,
+        Category:Health,
+        SkillRequired:Doctor=2,
+        NeedToBeLearn:true,
+    }
+
+    recipe HZExtractAmericiumFromSmokeDetector
+    {
+        HZSmokeDetector/HZSmokeDetectorBroken,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        keep Tweezers,
+        keep HZSolderingIron,
+
+        Result:HZAmericium241,
+        Time:300.0,
+        Category:Electrical,
+        SkillRequired:Electricity=4,
+        NeedToBeLearn:true,
+        OnCreate:HazardousZones.OnCreate.HZWorkWithRadioactiveMaterial,
+        StopOnWalk:true,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:ElectronicsScrap,
+        Sound:Dismantle,
+    }
+
+    /* recipe HZExtractPlasticCasingFromDevice
+    {
+        Radio.WalkieTalkie1/Radio.WalkieTalkie2/Radio.WalkieTalkie3/Radio.WalkieTalkie4/Radio.WalkieTalkie5,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        keep Tweezers,
+
+        Result:HZDevicePlasticCasing,
+        Time:600.0,
+        Category:Electrical,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        StopOnWalk:true
+    } */
+
+    recipe HZExtractTwoWayRadioComponents
+    {
+       Radio.WalkieTalkie1/Radio.WalkieTalkie2/Radio.WalkieTalkie3/Radio.WalkieTalkie4/Radio.WalkieTalkie5/HZSmokeDetector/Radio.RadioRed/Radio.RadioBlack/Radio.HamRadio1/Radio.HamRadio2,
+       keep [Recipe.GetItemTypes.Screwdriver],
+       keep Tweezers,
+       keep HZSolderingIron,
+       keep Glasses_SafetyGoggles,
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:1200.0,
+       SkillRequired:Electricity=2,
+       NeedToBeLearn:true,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:HazardousZones.OnCreate.HZExtractTwoWayRadioComponents,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:ElectronicsScrap,
+       Sound:Dismantle,
+    }
+
+    recipe HZDismantleDetectorItems
+    {
+       destroy HZChernoGeiger/HZCivilianGeiger/HZIndustrialGeiger/HZMilitaryGeiger/HZMultiGasDetector/HZMakeshiftBodyRadiationDetector,
+       keep [Recipe.GetItemTypes.Screwdriver],
+       keep Tweezers,
+       keep HZSolderingIron,
+       keep Glasses_SafetyGoggles,
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:1200.0,
+       SkillRequired:Electricity=2,
+       NeedToBeLearn:true,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:HazardousZones.OnCreate.HZExtractTwoWayRadioComponents,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:ElectronicsScrap,
+       Sound:Dismantle,
+    }
+
+    recipe HZCreateSimpleCircuit
+    {
+        HZResistors=5,
+        HZCapacitor=5,
+        HZSemiconductor=3,
+        ElectronicsScrap=10,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        keep HZSolderingIron,
+        keep Tweezers,
+        keep Glasses_SafetyGoggles,
+
+        NoBrokenItems:true,
+        Result:HZSimpleCircuit,
+        Time: 1600.0,
+        SkillRequired:Electricity=4,
+        NeedToBeLearn:true,
+        Category:Electrical,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:ElectronicsScrap,
+        Sound:Dismantle,
+    }
+
+    recipe HZCreateBasicRadiationSensor
+    {
+        HZSimpleCircuit,
+        HZAmericium241=5,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        keep HZSolderingIron,
+        keep Tweezers,
+        keep Glasses_SafetyGoggles,
+
+        NoBrokenItems:true,
+        Result:HZBasicRadiationSensor,
+        Time: 1600.0,
+        SkillRequired:Electricity=4,
+        NeedToBeLearn:true,
+        Category:Electrical,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:ElectronicsScrap,
+        Sound:Dismantle,
+        OnCreate:HazardousZones.OnCreate.HZWorkWithRadioactiveMaterial,
+    }
+
+    recipe HZCreateMakeshiftBodyRadiationDetector
+    {
+        HZOneLineLCD=1,
+        HZBasicRadiationSensor=1,
+        HZDevicePlasticCasing=1,
+        destroy Battery=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        keep HZSolderingIron,
+        keep Tweezers,
+        keep Glasses_SafetyGoggles,
+
+        NoBrokenItems:true,
+        Result:HZMakeshiftBodyRadiationDetector,
+        Time: 1600.0,
+        SkillRequired:Electricity=4,
+        NeedToBeLearn:true,
+        Category:Electrical,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:ElectronicsScrap,
+        Sound:Dismantle,
+        OnCreate:HazardousZones.OnCreate.HZWorkWithRadioactiveMaterial,
+    }
+
+    recipe HZAttachSolderingIronToSpear
+    {
+        SpearCrafted,
+        HZSolderingIron,
+        DuctTape=2,
+
+        Result:HZSpearSolderingIron,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpear,
+        Category:Survivalist,
+    }
+
+      recipe HZReclaimSolderingIronFromSpear
+    {
+        HZSpearSolderingIron,
+
+        Result:HZSolderingIron,
+        OnCreate:Recipe.OnCreate.DismantleSpear,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe HZGlueMilitaryPiecesTogether
+    {
+        destroy HZMilitaryMapPieces=4,
+        Scotchtape=4,
+
+        Result:HZMilitaryMap,
+        Time:100.0,
+        Category:Survivalist,
+    }
+}

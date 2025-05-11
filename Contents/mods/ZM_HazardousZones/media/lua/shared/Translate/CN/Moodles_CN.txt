@@ -1,0 +1,127 @@
+Moodles_CN {
+    Moodles_HZIodinePillSingle_Good_lvl4 = "钾碘化物生效中",
+    Moodles_HZIodinePillSingle_Good_desc_lvl4 = "它有助于保护你的免受一些放射性物质的损害",
+    Moodles_HZIodinePillSingle_Bad_lvl3 = "钾碘化物生效中",
+    Moodles_HZIodinePillSingle_Bad_desc_lvl3 = "药效几乎消失了",
+
+    Moodles_HZIndralineSyringe_Good_lvl4 = "抗辐药剂生效中",
+    Moodles_HZIndralineSyringe_Good_desc_lvl4 = "它有助于保护你的免受一些放射性物质的损害",
+    Moodles_HZIndralineSyringe_Bad_lvl3 = "抗辐药剂生效中",
+    Moodles_HZIndralineSyringe_Bad_desc_lvl3 = "药效几乎消失了",
+
+    Moodles_HZToxiguardPillSingle_Good_lvl4 = "抗毒药片生效中",
+    Moodles_HZToxiguardPillSingle_Good_desc_lvl4 = "它有助于你抵抗一些毒素的侵害",
+    Moodles_HZToxiguardPillSingle_Bad_lvl3 = "抗毒药片生效中",
+    Moodles_HZToxiguardPillSingle_Bad_desc_lvl3 = "药效几乎消失了",
+
+    Moodles_HZBioshieldRxSyringe_Good_lvl4 = "生化防护剂RX生效中",
+    Moodles_HZBioshieldRxSyringe_Good_desc_lvl4 = "它能增强你对生化危害的抵抗力",
+    Moodles_HZBioshieldRxSyringe_Bad_lvl3 = "生化防护剂RX生效中",
+    Moodles_HZBioshieldRxSyringe_Bad_desc_lvl3 = "药效几乎消失了",
+
+    Moodles_HZHazmatSuit_Good_lvl4 = "防护服生效中",
+    Moodles_HZHazmatSuit_Good_desc_lvl4 = "这种防护服对生化危害和辐射危害提供了良好的防护性",
+
+    Moodles_HZGasMask_Good_lvl4 = "防毒面罩佩戴中",
+    Moodles_HZGasMask_Good_desc_lvl4 = "这种防毒面罩对生化危害和辐射危害提供了良好的防护性",
+
+/* ----------- ChernoGeiger ----------- */
+
+    Moodles_HZChernoGeiger_Good_lvl4 = "检测到辐射",
+    Moodles_HZChernoGeiger_Good_desc_lvl4 = "辐射值高于正常水平",
+    Moodles_HZChernoGeiger_Good_lvl3 = "检测到少量辐射",
+    Moodles_HZChernoGeiger_Good_desc_lvl3 = "辐射值略高于正常水平",
+    Moodles_HZChernoGeiger_Good_lvl2 = "检测到微量辐射",
+    Moodles_HZChernoGeiger_Good_desc_lvl2 = "辐射值在正常水平范围内",
+    Moodles_HZChernoGeiger_Good_lvl1 = "未检测到辐射",
+    Moodles_HZChernoGeiger_Good_desc_lvl1 = "辐射值可以忽略不计",
+
+    Moodles_HZChernoGeiger_Bad_lvl4 = "检测到致死辐射",
+    Moodles_HZChernoGeiger_Bad_desc_lvl4 = "辐射值达到了致死水平",
+    Moodles_HZChernoGeiger_Bad_lvl3 = "检测到重度辐射",
+    Moodles_HZChernoGeiger_Bad_desc_lvl3 = "辐射值极高",
+    Moodles_HZChernoGeiger_Bad_lvl2 = "检测到高辐射",
+    Moodles_HZChernoGeiger_Bad_desc_lvl2 = "辐射值非常高",
+    Moodles_HZChernoGeiger_Bad_lvl1 = "检测到轻量辐射",
+    Moodles_HZChernoGeiger_Bad_desc_lvl1 = "辐射值很高",
+
+    /* ----------- Civilian ----------- */
+
+    Moodles_HZCivilianGeiger_Good_lvl4 = "检测到辐射",
+    Moodles_HZCivilianGeiger_Good_desc_lvl4 = "辐射值高于正常水平",
+    Moodles_HZCivilianGeiger_Good_lvl3 = "检测到少量辐射",
+    Moodles_HZCivilianGeiger_Good_desc_lvl3 = "辐射值略高于正常水平",
+    Moodles_HZCivilianGeiger_Good_lvl2 = "检测到微量辐射",
+    Moodles_HZCivilianGeiger_Good_desc_lvl2 = "辐射值在正常水平范围内",
+    Moodles_HZCivilianGeiger_Good_lvl1 = "未检测到辐射",
+    Moodles_HZCivilianGeiger_Good_desc_lvl1 = "辐射值可以忽略不计",
+
+    Moodles_HZCivilianGeiger_Bad_lvl4 = "检测到致死辐射",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl4 = "辐射值达到了致死水平",
+    Moodles_HZCivilianGeiger_Bad_lvl3 = "检测到重度辐射",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl3 = "辐射值极高",
+    Moodles_HZCivilianGeiger_Bad_lvl2 = "检测到高辐射",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl2 = "辐射值非常高",
+    Moodles_HZCivilianGeiger_Bad_lvl1 = "检测到轻量辐射",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl1 = "辐射值很高",
+
+    /* ----------- Industrial ----------- */
+
+    Moodles_HZIndustrialGeiger_Good_lvl4 = "检测到辐射",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl4 = "辐射值高于正常水平",
+    Moodles_HZIndustrialGeiger_Good_lvl3 = "检测到少量辐射",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl3 = "辐射值略高于正常水平",
+    Moodles_HZIndustrialGeiger_Good_lvl2 = "检测到微量辐射",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl2 = "辐射值在正常水平范围内",
+    Moodles_HZIndustrialGeiger_Good_lvl1 = "未检测到辐射",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl1 = "辐射值可以忽略不计",
+
+    Moodles_HZIndustrialGeiger_Bad_lvl4 = "检测到致死辐射",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl4 = "辐射值达到了致死水平",
+    Moodles_HZIndustrialGeiger_Bad_lvl3 = "检测到重度辐射",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl3 = "辐射值极高",
+    Moodles_HZIndustrialGeiger_Bad_lvl2 = "检测到高辐射",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl2 = "辐射值非常高",
+    Moodles_HZIndustrialGeiger_Bad_lvl1 = "检测到轻量辐射",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl1 = "辐射值很高",
+
+    /* ----------- Military ----------- */
+
+    Moodles_HZMilitaryGeiger_Good_lvl4 = "检测到辐射",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl4 = "辐射值高于正常水平",
+    Moodles_HZMilitaryGeiger_Good_lvl3 = "检测到少量辐射",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl3 = "辐射值略高于正常水平",
+    Moodles_HZMilitaryGeiger_Good_lvl2 = "检测到微量辐射",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl2 = "辐射值在正常水平范围内",
+    Moodles_HZMilitaryGeiger_Good_lvl1 = "未检测到辐射",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl1 = "辐射值可以忽略不计",
+
+    Moodles_HZMilitaryGeiger_Bad_lvl4 = "检测到致死辐射",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl4 = "辐射值达到了致死水平",
+    Moodles_HZMilitaryGeiger_Bad_lvl3 = "检测到重度辐射",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl3 = "辐射值极高",
+    Moodles_HZMilitaryGeiger_Bad_lvl2 = "检测到高辐射",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl2 = "辐射值非常高",
+    Moodles_HZMilitaryGeiger_Bad_lvl1 = "检测到轻量辐射",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl1 = "辐射值很高",
+
+    /* ----------- GasDetector ----------- */
+
+    Moodles_HZMultiGasDetector_Good_lvl4 = "检测到生化危害",
+    Moodles_HZMultiGasDetector_Good_desc_lvl4 = "空气毒性高于正常水平",
+    Moodles_HZMultiGasDetector_Good_lvl3 = "检测到少量生化危害",
+    Moodles_HZMultiGasDetector_Good_desc_lvl3 = "空气毒性略高于正常水平",
+    Moodles_HZMultiGasDetector_Good_lvl2 = "检测到微量生化危害",
+    Moodles_HZMultiGasDetector_Good_desc_lvl2 = "空气毒性在正常水平范围内",
+    Moodles_HZMultiGasDetector_Good_lvl1 = "未检测到生化危害",
+    Moodles_HZMultiGasDetector_Good_desc_lvl1 = "空气毒性可以忽略不计",
+
+    Moodles_HZMultiGasDetector_Bad_lvl4 = "检测到致死量生化危害",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl4 = "空气毒性达到了致死水平",
+    Moodles_HZMultiGasDetector_Bad_lvl3 = "检测到重度生化危害",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl3 = "空气毒性水平相当严重",
+    Moodles_HZMultiGasDetector_Bad_lvl2 = "检测到高生化危害",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl2 = "空气毒性水平很高",
+    Moodles_HZMultiGasDetector_Bad_lvl1 = "检测到轻量生化危害",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl1 = "空气毒性水平较高",
+}

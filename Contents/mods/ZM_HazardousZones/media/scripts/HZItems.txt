@@ -1,0 +1,588 @@
+module HazardousZones {
+    imports {
+        Base
+    }
+    
+    /* ------------------------------ Edible medicines or its crafting materials ------------------------------ */
+
+    item HZIodinePillSingle
+    {
+        DisplayCategory   = FirstAid,
+        Weight            = 0.02,
+        Type              = Normal,
+        DisplayName       = Iodine Tablet,
+        Icon              = HZIodinePillSingle,
+        Tooltip           = Tooltip_HZIodinePillSingle,
+        WorldStaticModel  = Antibiotics,
+        CantBeFrozen      = TRUE,
+        Medical           = TRUE,
+        Tags              = HZMedicineSinglePill;AntiRadiationMedicine,
+    }
+
+    item HZIodinePillsBottle
+    {
+        DisplayCategory  = FirstAid,
+        Weight           = 0.2,
+        Type             = Drainable,
+        UseDelta         = 0.2,
+        DisplayName      = Potassium Iodide Tablets,
+        Icon             = HZIodinePillsBottle,
+        Tooltip          = Tooltip_HZIodinePill,
+        StaticModel      = PillBottle,
+        WorldStaticModel = PillBottleGround,
+        Medical          = TRUE,
+        KeepOnDeplete    = TRUE,
+        Tags             = AntiRadiationMedicine,
+    }
+
+    item HZIodidePowder
+    {
+        DisplayCategory  = FirstAid,
+        Count          = 1,
+        Weight          = 0.02,
+        Type          = Normal,
+        UseWhileEquipped = TRUE,
+        DisplayName      = Potassium Iodide Powder,
+        Icon          = HZIodidePowder,
+        Tooltip          = Tooltip_HZIodidePowder,
+        WorldStaticModel = Poultice,
+        Medical          = TRUE,
+        Tags             = AntiRadiationMedicine,
+    }
+
+     item HZKILiquidMixture
+    {
+        DisplayCategory   = FirstAid,
+        Count           = 1,
+        Weight           = 1,
+        Type           = Normal,
+        UseWhileEquipped  = TRUE,
+        DisplayName       = Potassium Iodide Liquid Mixture,
+        Icon           = HZKILiquidMixture,
+        Tooltip           = Tooltip_HZKILiquidMixture,
+        WorldStaticModel  = BowlWater_Ground,
+        StaticModel       = Bowl,
+        Medical           = TRUE,
+        Tags              = AntiRadiationMedicine,
+    }
+
+    item HZIndralineSyringe
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = TRUE,
+        DisplayName      = Syringe with Indraline,
+        Icon             = HZIndralineSyringe,
+        Tooltip          = Tooltip_HZIndralineSyringe,
+        WorldStaticModel = Needle,
+        StaticModel      = Needle,
+        Medical          = TRUE,
+        UseWhileEquipped = TRUE,
+        Tags             = HZMedicineSyringe;AntiRadiationMedicine,
+    }
+
+    item HZBioshieldRxSyringe
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = TRUE,
+        DisplayName      = Syringe with Bioshield Rx,
+        Icon             = HZBioshieldRxSyringe,
+        Tooltip          = Tooltip_HZBioshieldRxSyringe,
+        WorldStaticModel = Needle,
+        StaticModel      = Needle,
+        Medical          = TRUE,
+        UseWhileEquipped = TRUE,
+        Tags             = HZMedicineSyringe;AntiRadiationMedicine,
+    }
+
+    item HZToxiguardPillSingle
+    {
+        DisplayCategory   = FirstAid,
+        Weight            = 0.02,
+        Type              = Normal,
+        DisplayName       = Toxiguard Pill,
+        Icon              = HZToxiguardPillSingle,
+        Tooltip           = Tooltip_HZToxiguardPillSingle,
+        WorldStaticModel  = Antibiotics,
+        CantBeFrozen      = TRUE,
+        Medical           = TRUE,
+        Tags              = HZMedicineSinglePill;AntiToxinMedicine,
+    }
+
+    item HZToxiguardPack
+    {
+        DisplayCategory   = FirstAid,
+        Weight            = 0.2,
+        Type              = Drainable,
+        UseDelta          = 0.2,
+        DisplayName       = Toxiguard Blister pack,
+        Icon              = HZToxiguardPack,
+        Tooltip           = Tooltip_HZToxiguardPack,
+        StaticModel       = PillBottle,
+        WorldStaticModel  = PainKillers_Ground,
+        Medical           = TRUE,
+        KeepOnDeplete     = FALSE,
+        Tags              = AntiToxinMedicine,
+        cantBeConsolided  = TRUE,
+    }
+
+    /* ------------------------------ Medical stuff --------------------------------- */
+
+    item HZBloodCollectionSyringe
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Blood Collection Syringe,
+        Icon             = HZBloodCollectionSyringe,
+        Tooltip          = Tooltip_HZBloodCollectionSyringe,
+        Tags             = MedicalItem;BloodCollectionSyringe;Syringe;HZBloodCollectionSyringe,
+    }
+
+    item HZBloodQuickTest
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Rapid Diagnostic Blood Test,
+        Icon             = HZBloodQuickTest,
+        Tooltip          = Tooltip_HZBloodQuickTest,
+        Tags             = MedicalItem;BloodTest;HZBloodQuickTest,
+    }
+
+    item HZBloodSampleVial
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Blood Sample Vial,
+        Icon             = HZBloodSampleVial,
+        Tooltip          = Tooltip_HZBloodSampleVial,
+        Tags             = MedicalItem;BloodTest;HZBloodSampleVial,
+    }
+
+    item HZBloodTestKit
+    {
+        DisplayCategory  = FirstAid,
+        Count            = 1,
+        Weight           = 1.5,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Blood Test Kit,
+        Icon             = HZBloodTestKit,
+        Tooltip          = Tooltip_HZBloodTestKit,
+        Tags             = MedicalItem;HZBloodTestKit;HZKitItem,
+    }
+
+    item HZBloodTestKitUserManual
+    {
+        DisplayCategory  = Junk,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Rapid Diagnostic Blood Test Kit User Manual,
+        CustomContextMenu = Open,
+        Icon             = HZBloodTestKitUserManual,
+        Tooltip          = Tooltip_HZBloodTestKitUserManual,
+        Tags             = MedicalItem;UserManual;HZBloodTestKitUserManual,
+    }
+
+    /* ------------------------------ Detector devices ------------------------------ */
+
+    item HZChernoGeiger
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZChernoGeiger,
+        Weight            = 1,
+        DisplayName       = DP-5V Soviet Era Dosimeter,
+        Tooltip           = Tooltip_HZChernoGeiger,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        UsesBattery       = TRUE,
+        ActivatedItem     = TRUE,
+        UseDelta          = 0.001, 
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = GeigerCounter;GeigerCounterLimited,
+        cantBeConsolided  = TRUE,
+    }
+
+    item HZCivilianGeiger
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZCivilianGeiger,
+        Weight            = 1.2,
+        DisplayName       = FX-300-GC Dosimeter,
+        Tooltip           = Tooltip_HZCivilianGeiger,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        UsesBattery       = TRUE,
+        ActivatedItem     = TRUE,
+        UseDelta          = 0.001, 
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = GeigerCounter,
+        cantBeConsolided  = TRUE,
+    }
+
+    item HZIndustrialGeiger
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZIndustrialGeiger,
+        Weight            = 1.7,
+        DisplayName       = BD-GCA07-V Dosimeter,
+        Tooltip           = Tooltip_HZIndustrialGeiger,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        UsesBattery       = TRUE,
+        ActivatedItem     = TRUE,
+        UseDelta          = 0.0005, 
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = GeigerCounter,
+    }
+
+    item HZMilitaryGeiger
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZMilitaryGeiger,
+        Weight            = 2,
+        DisplayName       = GCMIL-9000 Dosimeter,
+        Tooltip           = Tooltip_HZMilitaryGeiger,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        UsesBattery       = TRUE,
+        ActivatedItem     = TRUE,
+        UseDelta          = 0.00025, 
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = GeigerCounter;BodyRadiationDetector;HZBodyRadiationDetectorItem,
+    }
+
+    item HZMultiGasDetector
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZMultiGasDetector,
+        Weight            = 2,
+        DisplayName       = M-207 Molecule Detector,
+        Tooltip           = Tooltip_HZMultiGasDetector,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        UsesBattery       = TRUE,
+        ActivatedItem     = TRUE,
+        UseDelta          = 0.00025, 
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = GasDetector,
+    }
+
+    item HZMakeshiftBodyRadiationDetector
+    {
+        DisplayCategory   = Electronics,
+        Type              = Drainable,
+        Icon              = HZMakeshiftBodyRadiationDetector,
+        Weight            = 2,
+        DisplayName       = Makeshift Body Radiation Detectorr,
+        Tooltip           = Tooltip_HZMakeshiftBodyRadiationDetector,
+        StaticModel       = WalkieTalkieValue,
+        DisappearOnUse    = FALSE,
+        cantBeConsolided  = TRUE,
+        ActivatedItem     = TRUE,
+        UsesBattery       = TRUE,
+        UseDelta          = 0.00001,
+        primaryAnimMask   = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        AttachmentType    = Walkie,
+        Tags              = BodyRadiationDetector;HZBodyRadiationDetectorItem,
+    }
+
+    /* ------------------------------ Crafting Items and Materials ------------------------------ */
+
+    item HZSmokeDetector
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Smoke detector,
+        Icon             = HZSmokeDetector,
+        Tooltip          = Tooltip_HZSmokeDetector,
+        WorldStaticModel = HomeAlarm,
+        StaticModel      = HomeAlarm,
+        Tags             = SmokeDetector;AmericiumSource,
+    }
+
+    item HZSmokeDetectorBroken
+    {
+        DisplayCategory  = Junk,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Smoke detector (broken),
+        Icon             = HZSmokeDetectorBroken,
+        Tooltip          = Tooltip_HZSmokeDetectorBroken,
+        WorldStaticModel = HomeAlarm,
+        StaticModel      = HomeAlarm,
+        Tags             = SmokeDetector;AmericiumSource,
+    }
+
+    item HZSolderingIron
+    {
+        DisplayCategory = ToolWeapon,
+        MaxRange	=	0.85,
+        WeaponSprite	=	Screwdriver,
+        MinAngle	=	0.65,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;SmallBlade,
+        ConditionLowerChanceOneIn	=	6,
+        Weight	=	1,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Stab,
+        AimingMod	=	0.8,
+        ConditionMax	=	10,
+        MaxHitCount	=	1,
+        IsAimedHandWeapon	=	TRUE,
+        DoorDamage	=	1,
+        SwingAnim	=	Stab,
+        DisplayName	=	Soldering Iron,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	HZSolderingIron,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        CloseKillMove = Jaw_Stab,
+        BreakSound  =   ScrewdriverBreak,
+        TreeDamage  =   1,
+        EnduranceMod = 0.5,
+        MetalValue = 5,
+        CriticalChance	=	10,
+        CritDmgMultiplier = 10,
+        MinDamage	=	0.3,
+        MaxDamage	=	0.7,
+        WeaponLength = 0.19,
+        HitFloorSound	=	ScrewdriverHit,
+        ImpactSound	=	ScrewdriverHit,
+        DoorHitSound = ScrewdriverHit,
+        HitSound	=	ScrewdriverHit,
+        SwingSound = ScrewdriverSwing,
+        AttachmentType = Screwdriver,
+        Tags = ElectronicalTool;SolderingIron,
+    }
+
+    item HZAmericium241
+    {
+        DisplayCategory   = Electronics,
+        type              = Normal,
+        Icon              = HZAmericium241,
+        Weight            = 0.001,
+        DisplayName       = Americium-241,
+        Tooltip           = Tooltip_HZAmericium241,
+        StaticModel       = WalkieTalkieValue,
+        Tags              = RadioactiveMaterial;CraftingComponent,
+    }
+
+    item HZDevicePlasticCasing
+    {
+        DisplayCategory   = Electronics,
+        type              = Normal,
+        Icon              = HZDevicePlasticCasing,
+        Weight            = 0.1,
+        DisplayName       = Device plastic casing,
+        Tooltip           = Tooltip_HZDevicePlasticCasing,
+        StaticModel       = WalkieTalkieValue,
+        Tags              = PlasticCasing;CraftingComponent,
+    }
+
+    item HZDiode
+    {
+        DisplayCategory  = Junk,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Light Emitting Diode,
+        Icon             = HZDiode,
+        Tooltip          = Tooltip_HZDiode,
+        Tags             = LightSource;LED;CraftingComponent,
+    }
+
+    item HZOneLineLCD
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Eight-segment Display,
+        Icon             = HZOneLineLCD,
+        Tooltip          = Tooltip_HZOneLineLCD,
+        Tags             = Display;CraftingComponent,
+    }
+
+    item HZCapacitor
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Capacitor,
+        Icon             = HZCapacitor,
+        Tooltip          = Tooltip_HZCapacitor,
+        Tags             = Display;CraftingComponent,
+    }
+
+     item HZResistors
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.01,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Resistor,
+        Icon             = HZResistors,
+        Tooltip          = Tooltip_HZResistors,
+        Tags             = Display;CraftingComponent,
+    }
+
+    item HZSemiconductor
+    {
+        DisplayCategory  = Electronics,
+        Count          = 1,
+        Weight          = 0.01,
+        Type          = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Semiconductor,
+        Icon          = HZSemiconductor,
+        Tooltip          = Tooltip_HZSemiconductor,
+        Tags             = Display;CraftingComponent,
+    }
+
+    item HZSimpleCircuit
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Simple Circuit,
+        Icon             = HZSimpleCircuit,
+        Tooltip          = Tooltip_HZSimpleCircuit,
+        Tags             = Display;CraftingComponent,
+    }
+
+    item HZBasicRadiationSensor
+    {
+        DisplayCategory  = Electronics,
+        Count            = 1,
+        Weight           = 0.2,
+        Type             = Normal,
+        UseWhileEquipped = FALSE,
+        DisplayName      = Basic radiation sensor,
+        Icon             = HZBasicRadiationSensor,
+        Tooltip          = Tooltip_HZBasicRadiationSensor,
+        Tags             = Display;CraftingComponent,
+    }
+
+    /* ------------------- Weapons --------------------- */
+
+    item HZSpearSolderingIron
+    {
+        DisplayCategory = WeaponCrafted,
+        MaxRange	=	1.45,
+        WeaponSprite	=	SpearScrewdriver,
+        MinAngle	=	0.8,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;Spear,
+        ConditionLowerChanceOneIn	=	4,
+        Weight	=	2.1,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Spear,
+        ConditionMax	=	7,
+        MaxHitCount	=	2,
+        DoorDamage	=	7,
+        SwingAnim	=	Spear,
+        DisplayName	=	Spear With Soldering Iron,
+        MinRange	=	0.98,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	SpearScrewdriver,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   0,
+        TwoHandWeapon = TRUE,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 10,
+        MinDamage	=	1.2,
+        MaxDamage	=	1.6,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        BreakSound  =   SpearScrewdriverBreak,
+        HitFloorSound	=	SpearScrewdriverHit,
+        ImpactSound	=	SpearScrewdriverHit,
+        DoorHitSound = SpearScrewdriverHit,
+        HitSound	=	SpearScrewdriverHit,
+        SwingSound	=	SpearScrewdriverSwing,
+        SoundMap = SpearStab SpearScrewdriverStab,
+		AttachmentType = Shovel,
+        Tags = FishingSpear,
+    }
+
+    /* ----------- Maps ----------- */
+
+    item HZMilitaryMap
+    {
+        DisplayCategory  = Cartography,
+        Type             = Normal,
+        DisplayName      = Military Map,
+        Icon             = Map,
+        Weight           = 0.1,
+        SurvivalGear     = TRUE,
+        WorldStaticModel = Map,
+    }
+
+     item HZMilitaryMapPieces
+    {
+        DisplayCategory  = Cartography,
+        Type             = Normal,
+        DisplayName      = Military Map Pieces,
+        Icon             = HZMilitaryMapPieces,
+        Weight           = 0.1,
+        WorldStaticModel = Map,
+    }
+}

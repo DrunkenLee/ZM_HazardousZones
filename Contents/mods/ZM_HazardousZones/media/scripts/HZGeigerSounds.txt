@@ -1,0 +1,181 @@
+module HazardousZones {
+  sound GeigerLow1
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_low_1.ogg,
+			volume = 0.1,
+		}
+	}
+
+  sound GeigerLow2
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_low_2.ogg,
+			volume = 0.1,
+		}
+	}
+
+  sound GeigerLow3
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_low_3.ogg,
+			volume = 0.1,
+		}
+	}
+
+  sound GeigerMed1
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_medium_1.ogg,
+			volume = 0.3,
+		}
+	}
+
+  sound GeigerMed2
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_medium_2.ogg,
+			volume = 0.3,
+		}
+	}
+
+  sound GeigerMed3
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_medium_3.ogg,
+			volume = 0.3,
+		}
+	}
+
+  sound GeigerHigh1
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_high_1.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound GeigerHigh2
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_high_2.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound GeigerHigh3
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_high_3.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound GeigerHighest
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_highest_1.ogg,
+			volume = 0.7,
+		}
+	}
+
+  sound GeigerLow
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_low.ogg,
+			volume = 0.1,
+		}
+	}
+
+  sound GeigerMedium
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_medium.ogg,
+			volume = 0.3,
+		}
+	}
+
+  sound GeigerHigh
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_high.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound GeigerHighestAlert
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/geiger_highest.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound GasDetectorLow
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/gasdetector_low.ogg,
+			volume = 0.1,
+		}
+	}
+
+  sound GasDetectorMedium
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/gasdetector_medium.ogg,
+			volume = 0.3,
+		}
+	}
+
+  sound GasDetectorHigh
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/gasdetector_high.ogg,
+			volume = 0.5,
+		}
+	}
+
+  sound BRDBeep
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/brdbeep.ogg,
+			volume = 0.5,
+		}
+	}
+}

@@ -1,0 +1,244 @@
+VERSION = 1,
+
+/* option HZ.Debug
+{
+    type = boolean,
+    default = false,
+
+    page = HazardousZones,
+    translation = Debug,
+} */
+
+/* option HZ.SpawnWithCivilianGeiger
+{
+    type = boolean,
+    default = false,
+
+    page = HazardousZones,
+    translation = SpawnWithCivilianGeiger
+} */
+
+option HZ.BloodTestsCanFail
+{
+    type = boolean,
+    default = true,
+
+    page = HazardousZones,
+    translation = BloodTestsCanFail
+}
+
+option HZ.UsePresetsIfNoZones
+{
+    type = boolean,
+    default = false,
+
+    page = HazardousZones,
+    translation = UsePresetsIfNoZones
+}
+
+option HZ.MilitaryMapShowZones
+{
+    type = boolean,
+    default = false,
+
+    page = HazardousZones,
+    translation = MilitaryMapShowZones
+}
+
+option HZ.DetectorFalsePositiveAlarms
+{
+    type = boolean,
+    default = true,
+
+    page = HazardousZones,
+    translation = DetectorFalsePositiveAlarms
+}
+
+option HZ.ZombiesReactToDetectors
+{
+    type = boolean,
+    default = true,
+
+    page = HazardousZones,
+    translation = ZombiesReactToDetectors
+}
+
+option HZ.RandomZones
+{
+    type = boolean,
+    default = true,
+    page = HazardousZones,
+    translation = RandomZones
+}
+
+option HZ.RandomZonesType
+{
+	type = enum,
+	numValues = 3,
+	default = 1,
+	page = HazardousZones,
+	translation = RandomZonesType,
+	valueTranslation = RandomZonesTypeValues,
+}
+
+option HZ.RandomZonesIsGradual
+{
+    type = boolean,
+    default = true,
+    page = HazardousZones,
+    translation = RandomZonesIsGradual
+}
+
+option HZ.RandomZonesLimit
+{
+    type = integer,
+    min = 1,
+    max = 10,
+    default = 5,
+
+    page = HazardousZones,
+    translation = RandomZonesLimit
+}
+
+option HZ.RandomZonesRadius
+{
+    type = integer,
+    min = 10,
+    max = 2400,
+    default = 600,
+
+    page = HazardousZones,
+    translation = RandomZonesRadius
+}
+
+option HZ.RandomZonesExposureLimit
+{
+    type = integer,
+    min = 0,
+    max = 255,
+    default = 15,
+
+    page = HazardousZones,
+    translation = RandomZonesExposureLimit
+}
+
+option HZ.RandomZonesDuration
+{
+    type = integer,
+    min = 1,
+    max = 720,
+    default = 84,
+
+    page = HazardousZones,
+    translation = RandomZonesDuration
+}
+
+option HZ.RandomZonesCreationDC
+{
+    type = integer,
+    min = 1,
+    max = 100,
+    default = 13,
+
+    page = HazardousZones,
+    translation = RandomZonesCreationDC
+}
+
+option HZ.RandomZonesCheckInterval
+{
+    type = integer,
+    min = 1,
+    max = 24,
+    default = 6,
+
+    page = HazardousZones,
+    translation = RandomZonesCheckInterval
+}
+
+/*
+
+-- COMING SOON --
+
+option HZ.ScriptedEvents
+{
+    type = boolean,
+    default = true,
+
+    page = HazardousZones,
+    translation = ScriptedEvents
+}
+
+*/
+
+option HZ.GasMaskTypes
+{
+    type = string,
+    default = Hat_GasMask,
+
+    page = HazardousZones,
+    translation = GasMaskTypes
+}
+
+option HZ.HazmatSuitTypes
+{
+    type = string,
+    default = HazmatSuit,
+
+    page = HazardousZones,
+    translation = HazmatSuitTypes
+}
+
+option HZ.ItemProtectionCap
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.9,
+
+    page = HazardousZones,
+    translation = ItemProtectionCap
+}
+
+option HZ.GasMaskRadiationProtectionValue
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.4,
+
+    page = HazardousZones,
+    translation = GasMaskRadiationProtectionValue
+}
+
+option HZ.GasMaskBiologicalProtectionValue
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.4,
+
+    page = HazardousZones,
+    translation = GasMaskBiologicalProtectionValue
+}
+
+option HZ.HazmatSuitRadiationProtectionValue
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.9,
+
+    page = HazardousZones,
+    translation = HazmatSuitRadiationProtectionValue
+}
+
+option HZ.HazmatSuitBiologicalProtectionValue
+{
+    type = double,
+    min = 0.1,
+    max = 1.0,
+    default = 0.9,
+
+    page = HazardousZones,
+    translation = HazmatSuitBiologicalProtectionValue
+}

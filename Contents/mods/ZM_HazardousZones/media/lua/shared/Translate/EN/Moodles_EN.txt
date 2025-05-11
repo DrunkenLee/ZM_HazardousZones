@@ -1,0 +1,127 @@
+Moodles_EN {
+    Moodles_HZIodinePillSingle_Good_lvl4 = "Potassium Iodide",
+    Moodles_HZIodinePillSingle_Good_desc_lvl4 = "It may help protect your thyroid from some radioactive materials",
+    Moodles_HZIodinePillSingle_Bad_lvl3 = "Potassium Iodide",
+    Moodles_HZIodinePillSingle_Bad_desc_lvl3 = "The benefits of tablets are almost over.",
+
+    Moodles_HZIndralineSyringe_Good_lvl4 = "Indraline Injection",
+    Moodles_HZIndralineSyringe_Good_desc_lvl4 = "May aid in shielding the thyroid from certain radioactive materials.",
+    Moodles_HZIndralineSyringe_Bad_lvl3 = "Indraline Injection",
+    Moodles_HZIndralineSyringe_Bad_desc_lvl3 = "The benefits of the injection are almost over.",
+
+    Moodles_HZToxiguardPillSingle_Good_lvl4 = "Toxiguard",
+    Moodles_HZToxiguardPillSingle_Good_desc_lvl4 = "Rapid-response anti-toxin medicine.",
+    Moodles_HZToxiguardPillSingle_Bad_lvl3 = "Toxiguard",
+    Moodles_HZToxiguardPillSingle_Bad_desc_lvl3 = "The benefits of pills are almost over.",
+
+    Moodles_HZBioshieldRxSyringe_Good_lvl4 = "Bioshield-Rx Injection",
+    Moodles_HZBioshieldRxSyringe_Good_desc_lvl4 = "Potent immunostimulant for enhanced defense against biological threats.",
+    Moodles_HZBioshieldRxSyringe_Bad_lvl3 = "Bioshield-Rx Injection",
+    Moodles_HZBioshieldRxSyringe_Bad_desc_lvl3 = "The benefits of the injection are almost over.",
+
+    Moodles_HZHazmatSuit_Good_lvl4 = "Hazmat Suit",
+    Moodles_HZHazmatSuit_Good_desc_lvl4 = "This protection suit provide decent safety against biological hazards and alpha and beta particles aswell",
+
+    Moodles_HZGasMask_Good_lvl4 = "Gas Mask",
+    Moodles_HZGasMask_Good_desc_lvl4 = "This protective mask provide moderate safety against biological or nuclear hazards",
+
+/* ----------- ChernoGeiger ----------- */
+
+    Moodles_HZChernoGeiger_Good_lvl4 = "Radioactive exposure detected",
+    Moodles_HZChernoGeiger_Good_desc_lvl4 = "The level of radiation is higher than normal.",
+    Moodles_HZChernoGeiger_Good_lvl3 = "Low radioactive exposure detected",
+    Moodles_HZChernoGeiger_Good_desc_lvl3 = "The level of radiation is slightly higher than normal.",
+    Moodles_HZChernoGeiger_Good_lvl2 = "Very low radioactive exposure detected",
+    Moodles_HZChernoGeiger_Good_desc_lvl2 = "The level of radiation detected is between the normal rates.",
+    Moodles_HZChernoGeiger_Good_lvl1 = "No radioactive exposure detected",
+    Moodles_HZChernoGeiger_Good_desc_lvl1 = "The level of radiation detected is almost negligible.",
+
+    Moodles_HZChernoGeiger_Bad_lvl4 = "Deadly radioactive exposure detected",
+    Moodles_HZChernoGeiger_Bad_desc_lvl4 = "The level of radiation is deadly.",
+    Moodles_HZChernoGeiger_Bad_lvl3 = "Heavy radioactive exposure detected",
+    Moodles_HZChernoGeiger_Bad_desc_lvl3 = "The level of radiation is heavy.",
+    Moodles_HZChernoGeiger_Bad_lvl2 = "Very High radioactive exposure detected",
+    Moodles_HZChernoGeiger_Bad_desc_lvl2 = "The level of radiation is very high.",
+    Moodles_HZChernoGeiger_Bad_lvl1 = "Light radioactive exposure detected",
+    Moodles_HZChernoGeiger_Bad_desc_lvl1 = "The level of radiation is high.",
+
+    /* ----------- Civilian ----------- */
+
+    Moodles_HZCivilianGeiger_Good_lvl4 = "Radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Good_desc_lvl4 = "The level of radiation is higher than normal.",
+    Moodles_HZCivilianGeiger_Good_lvl3 = "Low radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Good_desc_lvl3 = "The level of radiation is slightly higher than normal.",
+    Moodles_HZCivilianGeiger_Good_lvl2 = "Very low radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Good_desc_lvl2 = "The level of radiation detected is between the normal rates.",
+    Moodles_HZCivilianGeiger_Good_lvl1 = "No radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Good_desc_lvl1 = "The level of radiation detected is almost negligible.",
+
+    Moodles_HZCivilianGeiger_Bad_lvl4 = "Deadly radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl4 = "The level of radiation is deadly.",
+    Moodles_HZCivilianGeiger_Bad_lvl3 = "Heavy radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl3 = "The level of radiation is heavy.",
+    Moodles_HZCivilianGeiger_Bad_lvl2 = "Very High radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl2 = "The level of radiation is very high.",
+    Moodles_HZCivilianGeiger_Bad_lvl1 = "Light radioactive exposure detected",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl1 = "The level of radiation is high.",
+
+    /* ----------- Industrial ----------- */
+
+    Moodles_HZIndustrialGeiger_Good_lvl4 = "Radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl4 = "The level of radiation is higher than normal.",
+    Moodles_HZIndustrialGeiger_Good_lvl3 = "Low radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl3 = "The level of radiation is slightly higher than normal.",
+    Moodles_HZIndustrialGeiger_Good_lvl2 = "Very low radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl2 = "The level of radiation detected is between the normal rates.",
+    Moodles_HZIndustrialGeiger_Good_lvl1 = "No radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl1 = "The level of radiation detected is almost negligible.",
+
+    Moodles_HZIndustrialGeiger_Bad_lvl4 = "Deadly radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl4 = "The level of radiation is deadly.",
+    Moodles_HZIndustrialGeiger_Bad_lvl3 = "Heavy radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl3 = "The level of radiation is heavy.",
+    Moodles_HZIndustrialGeiger_Bad_lvl2 = "Very High radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl2 = "The level of radiation is very high.",
+    Moodles_HZIndustrialGeiger_Bad_lvl1 = "Light radioactive exposure detected",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl1 = "The level of radiation is high.",
+
+    /* ----------- Military ----------- */
+
+    Moodles_HZMilitaryGeiger_Good_lvl4 = "Radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl4 = "The level of radiation is higher than normal.",
+    Moodles_HZMilitaryGeiger_Good_lvl3 = "Low radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl3 = "The level of radiation is slightly higher than normal.",
+    Moodles_HZMilitaryGeiger_Good_lvl2 = "Very low radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl2 = "The level of radiation detected is between the normal rates.",
+    Moodles_HZMilitaryGeiger_Good_lvl1 = "No radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl1 = "The level of radiation detected is almost negligible.",
+
+    Moodles_HZMilitaryGeiger_Bad_lvl4 = "Deadly radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl4 = "The level of radiation is deadly.",
+    Moodles_HZMilitaryGeiger_Bad_lvl3 = "Heavy radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl3 = "The level of radiation is heavy.",
+    Moodles_HZMilitaryGeiger_Bad_lvl2 = "Very High radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl2 = "The level of radiation is very high.",
+    Moodles_HZMilitaryGeiger_Bad_lvl1 = "Light radioactive exposure detected",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl1 = "The level of radiation is high.",
+
+    /* ----------- GasDetector ----------- */
+
+    Moodles_HZMultiGasDetector_Good_lvl4 = "Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Good_desc_lvl4 = "The level of toxicity is higher than normal.",
+    Moodles_HZMultiGasDetector_Good_lvl3 = "Low Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Good_desc_lvl3 = "The level of toxicity is slightly higher than normal.",
+    Moodles_HZMultiGasDetector_Good_lvl2 = "Very low Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Good_desc_lvl2 = "The level of toxicity detected is between the normal rates.",
+    Moodles_HZMultiGasDetector_Good_lvl1 = "No Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Good_desc_lvl1 = "The level of toxicity detected is almost negligible.",
+
+    Moodles_HZMultiGasDetector_Bad_lvl4 = "Deadly Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl4 = "The level of toxicity is deadly.",
+    Moodles_HZMultiGasDetector_Bad_lvl3 = "Heavy Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl3 = "The level of toxicity is heavy.",
+    Moodles_HZMultiGasDetector_Bad_lvl2 = "Very High Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl2 = "The level of toxicity is very high.",
+    Moodles_HZMultiGasDetector_Bad_lvl1 = "Light Biological Hazard detected",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl1 = "The level of toxicity is high.",
+}

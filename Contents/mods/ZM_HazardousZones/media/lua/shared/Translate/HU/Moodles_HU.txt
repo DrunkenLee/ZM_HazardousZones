@@ -1,0 +1,126 @@
+Moodles_EN {
+    Moodles_HZIodinePillSingle_Good_lvl4 = "Kálium-jodid",
+    Moodles_HZIodinePillSingle_Good_desc_lvl4 = "Segíthet megvédeni a pajzsmirigyet egyes radioaktív anyagoktól",
+    Moodles_HZIodinePillSingle_Bad_lvl3 = "Kálium-jodid",
+    Moodles_HZIodinePillSingle_Bad_desc_lvl3 = "A tabletta elõnyei majdnem véget értek.",
+
+    Moodles_HZIndralineSyringe_Good_lvl4 = "Indralin injekció",
+    Moodles_HZIndralineSyringe_Good_desc_lvl4 = "Segíthet a pajzsmirigy bizonyos radioaktív anyagoktól való megóvásában.",
+    Moodles_HZIndralineSyringe_Bad_lvl3 = "Indralin injekció",
+    Moodles_HZIndralineSyringe_Bad_desc_lvl3 = "Az injekció elõnyei már majdnem véget értek.",
+
+    Moodles_HZToxiguardPillSingle_Good_lvl4 = "Toxiguard",
+    Moodles_HZToxiguardPillSingle_Good_desc_lvl4 = "Gyors reagálású méregellenes gyógyszer.",
+    Moodles_HZToxiguardPillSingle_Bad_lvl3 = "Toxiguard",
+    Moodles_HZToxiguardPillSingle_Bad_desc_lvl3 = "A tabletták elõnyei majdnem véget értek.",
+
+    Moodles_HZBioshieldRxSyringe_Good_lvl4 = "Bioshield-Rx injekció",
+    Moodles_HZBioshieldRxSyringe_Good_desc_lvl4 = "Erõteljes immunstimuláns a biológiai fenyegetések elleni fokozott védelemhez.",
+    Moodles_HZBioshieldRxSyringe_Bad_lvl3 = "Bioshield-Rx injekció",
+    Moodles_HZBioshieldRxSyringe_Bad_desc_lvl3 = "Az injekció elõnyei már majdnem véget értek.",
+
+    Moodles_HZHazmatSuit_Good_lvl4 = "Hazmat Suit",
+    Moodles_HZHazmatSuit_Good_desc_lvl4 = "Ez a védõruha megfelelõ biztonságot nyújt a biológiai veszélyekkel, valamint az alfa- és béta-részecskékkel szemben is",
+
+    Moodles_HZGasMask_Good_lvl4 = "Gázálarc",
+    Moodles_HZGasMask_Good_desc_lvl4 = "Ez a védõmaszk mérsékelt biztonságot nyújt biológiai vagy nukleáris veszélyekkel szemben",
+
+/* ----------- ChernoGeiger ----------- */
+
+    Moodles_HZChernoGeiger_Good_lvl4 = "Radioaktív expozíciót észlelt",
+    Moodles_HZChernoGeiger_Good_desc_lvl4 = "A sugárzás szintje magasabb a normálisnál.",
+    Moodles_HZChernoGeiger_Good_lvl3 = "Alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Good_desc_lvl3 = "A sugárzás szintje kissé magasabb a normálisnál.",
+    Moodles_HZChernoGeiger_Good_lvl2 = "Nagyon alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Good_desc_lvl2 = "Az észlelt sugárzási szint a normál értékek között van.",
+    Moodles_HZChernoGeiger_Good_lvl1 = "Nem észlelt radioaktív sugárterhelést",
+    Moodles_HZChernoGeiger_Good_desc_lvl1 = "Az észlelt sugárzás szintje szinte elhanyagolható.",
+
+    Moodles_HZChernoGeiger_Bad_lvl4 = "Halálos radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Bad_desc_lvl4 = "A sugárzás szintje halálos.",
+    Moodles_HZChernoGeiger_Bad_lvl3 = "Erõs radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Bad_desc_lvl3 = "A sugárzás szintje erõs.",
+    Moodles_HZChernoGeiger_Bad_lvl2 = "Nagyon magas radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Bad_desc_lvl2 = "A sugárzás szintje nagyon magas.",
+    Moodles_HZChernoGeiger_Bad_lvl1 = "Könnyû radioaktív sugárterhelés észlelve",
+    Moodles_HZChernoGeiger_Bad_desc_lvl1 = "A sugárzás szintje magas.",
+
+    /* ----------- Polgári ----------- */
+
+    Moodles_HZCivilianGeiger_Good_lvl4 = "Radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Good_desc_lvl4 = "A sugárzás szintje magasabb a normálisnál.",
+    Moodles_HZCivilianGeiger_Good_lvl3 = "Alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Good_desc_lvl3 = "A sugárzás szintje a normálisnál kissé magasabb.",
+    Moodles_HZCivilianGeiger_Good_lvl2 = "Nagyon alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Good_desc_lvl2 = "Az észlelt sugárzási szint a normál értékek között van.",
+    Moodles_HZCivilianGeiger_Good_lvl1 = "Nem észlelt radioaktív sugárterhelést",
+    Moodles_HZCivilianGeiger_Good_desc_lvl1 = "Az észlelt sugárzás szintje szinte elhanyagolható.",
+
+    Moodles_HZCivilianGeiger_Bad_lvl4 = "Halálos radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl4 = "A sugárzás szintje halálos.",
+    Moodles_HZCivilianGeiger_Bad_lvl3 = "Erõs radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl3 = "A sugárzás szintje erõs.",
+    Moodles_HZCivilianGeiger_Bad_lvl2 = "Nagyon magas radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl2 = "A sugárzás szintje nagyon magas.",
+    Moodles_HZCivilianGeiger_Bad_lvl1 = "Könnyû radioaktív sugárterhelés észlelve",
+    Moodles_HZCivilianGeiger_Bad_desc_lvl1 = "A sugárzás szintje magas.",
+
+    /* ----------- Ipari ----------- */
+
+    Moodles_HZIndustrialGeiger_Good_lvl4 = "Radioaktív sugárterhelés észlelve",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl4 = "A sugárzás szintje magasabb a normálisnál.",
+    Moodles_HZIndustrialGeiger_Good_lvl3 = "Alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl3 = "A sugárzás szintje a normálisnál kissé magasabb.",
+    Moodles_HZIndustrialGeiger_Good_lvl2 = "Nagyon alacsony radioaktív sugárterhelést észlelt",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl2 = "Az észlelt sugárzási szint a normál értékek között van.",
+    Moodles_HZIndustrialGeiger_Good_lvl1 = "Nem észlelt radioaktív sugárterhelést",
+    Moodles_HZIndustrialGeiger_Good_desc_lvl1 = "Az észlelt sugárzás szintje szinte elhanyagolható.",
+
+    Moodles_HZIndustrialGeiger_Bad_lvl4 = "Halálos radioaktív sugárterhelést észlelt",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl4 = "A sugárzás szintje halálos.",
+    Moodles_HZIndustrialGeiger_Bad_lvl3 = "Erõs radioaktív sugárterhelés észlelve",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl3 = "A sugárzás szintje erõs.",
+    Moodles_HZIndustrialGeiger_Bad_lvl2 = "Nagyon magas radioaktív sugárterhelés észlelve",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl2 = "A sugárzás szintje nagyon magas.",
+    Moodles_HZIndustrialGeiger_Bad_lvl1 = "Könnyû radioaktív sugárterhelés észlelve",
+    Moodles_HZIndustrialGeiger_Bad_desc_lvl1 = "A sugárzás szintje magas.",
+
+    /* ----------- Katonai ----------- */
+
+    Moodles_HZMilitaryGeiger_Good_lvl4 = "Radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl4 = "A sugárzás szintje magasabb a normálisnál.",
+    Moodles_HZMilitaryGeiger_Good_lvl3 = "Alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl3 = "A sugárzás szintje a normálisnál kissé magasabb.",
+    Moodles_HZMilitaryGeiger_Good_lvl2 = "Nagyon alacsony radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl2 = "Az észlelt sugárzási szint a normál értékek között van.",
+    Moodles_HZMilitaryGeiger_Good_lvl1 = "Nem észlelt radioaktív sugárterhelést",
+    Moodles_HZMilitaryGeiger_Good_desc_lvl1 = "Az észlelt sugárzás szintje szinte elhanyagolható.",
+
+    Moodles_HZMilitaryGeiger_Bad_lvl4 = "Halálos radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl4 = "A sugárzás szintje halálos.",
+    Moodles_HZMilitaryGeiger_Bad_lvl3 = "Erõs radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl3 = "A sugárzás szintje erõs.",
+    Moodles_HZMilitaryGeiger_Bad_lvl2 = "Magas szintû radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl2 = "A sugárzás szintje nagyon magas.",
+    Moodles_HZMilitaryGeiger_Bad_lvl1 = "Alacsony szintû radioaktív sugárterhelés észlelve",
+    Moodles_HZMilitaryGeiger_Bad_desc_lvl1 = "A sugárzás szintje magas.",
+
+    /* ----------- GasDetector ----------- */
+
+    Moodles_HZMultiGasDetector_Good_lvl4 = "Biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Good_desc_lvl4 = "A toxicitás szintje magasabb a normálisnál.",
+    Moodles_HZMultiGasDetector_Good_lvl3 = "Alacsony biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Good_desc_lvl3 = "A toxicitás szintje kissé magasabb a normálisnál.",
+    Moodles_HZMultiGasDetector_Good_lvl2 = "Nagyon alacsony biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Good_desc_lvl2 = "Az észlelt toxicitás szintje a normál értékek között van.",
+    Moodles_HZMultiGasDetector_Good_lvl1 = "Nem észlelt biológiai veszélyt",
+    Moodles_HZMultiGasDetector_Good_desc_lvl1 = "Az észlelt toxicitás szintje szinte elhanyagolható.",
+
+    Moodles_HZMultiGasDetector_Bad_lvl4 = "Halálos szintû biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl4 = "A toxicitás szintje halálos.",
+    Moodles_HZMultiGasDetector_Bad_lvl3 = "Nagyon magas szintû biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl3 = "A mérgezés szintje súlyos.",
+    Moodles_HZMultiGasDetector_Bad_lvl2 = "Magas szintû biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl2 = "A toxicitás szintje nagyon magas.",
+    Moodles_HZMultiGasDetector_Bad_lvl1 = "Alacsony szintû biológiai veszélyt észlelt",
+    Moodles_HZMultiGasDetector_Bad_desc_lvl1 = "A toxicitás szintje magas.",
