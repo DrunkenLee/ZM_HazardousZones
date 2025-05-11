@@ -48,7 +48,7 @@ function HZDrinkKILiquidMixtureAction:perform()
 end
 
 function HZDrinkKILiquidMixtureAction:new (character, item, time)
-    print(character)
+
     local o = {}
     setmetatable(o, self)
     self.__index = self
@@ -56,12 +56,12 @@ function HZDrinkKILiquidMixtureAction:new (character, item, time)
     o.item = item;
     o.stopOnWalk = false;
     o.stopOnRun = true;
-    
-    if o.character:isTimedActionInstant() then 
-        o.maxTime = 1; 
-    else 
+
+    if o.character:isTimedActionInstant() then
+        o.maxTime = 1;
+    else
         o.maxTime = time;
     end
-    
+
     return o
 end

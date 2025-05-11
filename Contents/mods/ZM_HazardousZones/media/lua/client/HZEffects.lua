@@ -322,7 +322,7 @@ function HZ:applyItemEffects(player, item)
 
     for effect, data in pairs(itemEffects) do
         if isDebugEnabled() then
-            print("[APPLYING ITEM EFFECTS] "..effect);
+
         end
         _applyEffect(player, effect, data)
     end
