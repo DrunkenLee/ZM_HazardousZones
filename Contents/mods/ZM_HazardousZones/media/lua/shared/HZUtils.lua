@@ -56,8 +56,8 @@ function HZUtils:readJSON(fileName)
         while line do
             lines = lines .. line .. "\r\n";
             line = r:readLine()
-        end    
-        
+        end
+
         r:close();
         if lines == "" then
             return nil;
@@ -91,7 +91,7 @@ function HZUtils:getRandomEpicentre()
     end
 
     if isDebugEnabled() then
-        print("[RANDOM ZONES] Got valid square in "..tostring(iteration).." cycles [x="..sq.x..", y="..sq.y..", z="..sq.z.."]")
+
     end
 
     return sq
@@ -122,14 +122,14 @@ function HZUtils:dump(o)
 end
 
 function HZUtils:printTable(table)
-    print(HZUtils:dump(table))
+
 end
 
 function HZUtils:getEffectByExposure(hazardType, exposureValue)
     local effects = HazardousZones.Constants.EffectsData[hazardType]
-    
+
     if (effects == nil) then return end
-    
+
     local severity = nil
     local effect = nil
     for s, e in pairs(effects) do
@@ -139,7 +139,7 @@ function HZUtils:getEffectByExposure(hazardType, exposureValue)
         end
     end
     return {
-        severity = severity, 
+        severity = severity,
         effect = effect
     }
 end
@@ -162,7 +162,7 @@ function HZUtils:arrayContains(tab, val)
             return true
         end
     end
-    
+
     return false
 end
 
@@ -205,10 +205,10 @@ end
 
 function HZUtils:isPlayerUseGasMask(player)
     local items = player:getWornItems()
-    
+
     for itemIndex = 1, items:size() - 1 do
         local item = items:getItemByIndex(itemIndex)
-        if HZUtils:isGasMask(item) then 
+        if HZUtils:isGasMask(item) then
             return true
         end
     end
@@ -217,12 +217,12 @@ end
 
 function HZUtils:isPlayerUseHazmatSuit(player)
     local items = player:getWornItems()
-    
+
     for itemIndex = 0, items:size() - 1 do
         local item = items:getItemByIndex(itemIndex)
         -- local isHazmat = item and ((HZUtils:arrayContains(HZConsts.ItemTypes.HazmatSuit, item:getType())) or (item:hasTag("HazmatSuit"))) and item:getHolesNumber() == 0
-        
-        if HZUtils:isHazmat(item) then 
+
+        if HZUtils:isHazmat(item) then
             return true
         end
     end
@@ -231,15 +231,15 @@ end
 
 function HZUtils:isItemHasTagAndActivated(item, tag)
     if not item then return false end
-    
+
     if item
-    and item:hasTag(tag) 
-    and item:isActivated() 
+    and item:hasTag(tag)
+    and item:isActivated()
     and item:getUsedDelta() > 0
     then
         return true
     end
-    
+
     return false
 end
 
@@ -247,28 +247,28 @@ function HZUtils:isPlayerHasActivatedItemEquippedByTag(player, tag)
     local attachedItems = player:getAttachedItems()
     local primaryEquippedItem = player:getPrimaryHandItem()
     local secondaryEquippedItem = player:getSecondaryHandItem()
-    
+
     if primaryEquippedItem and HZUtils:isItemHasTagAndActivated(primaryEquippedItem, tag) then
         return primaryEquippedItem
     end
-    
+
     if secondaryEquippedItem and HZUtils:isItemHasTagAndActivated(secondaryEquippedItem, tag) then
         return secondaryEquippedItem
     end
-    
+
     for i = 0, attachedItems:size() - 1 do
         local item = attachedItems:getItemByIndex(i)
         if HZUtils:isItemHasTagAndActivated(item, tag) then
             return item
         end
     end
-    
+
     return
 end
 
 function HZUtils:getSoundByHazardTypeAndGain(hazardType, gain)
     local s
-    
+
     if hazardType == "radiation" then
         if gain > 0 and gain <= 25 then
             s = "GeigerLow"
@@ -279,7 +279,7 @@ function HZUtils:getSoundByHazardTypeAndGain(hazardType, gain)
         elseif gain > 90 then
             s = "GeigerHighestAlert"
         end
-        
+
         return s
     elseif hazardType == "biological" then
         if gain > 0 and gain <= 33 then
@@ -289,10 +289,10 @@ function HZUtils:getSoundByHazardTypeAndGain(hazardType, gain)
         elseif gain > 66 then
             s = "GasDetectorHigh"
         end
-        
+
         return s
     end
-    
+
     return false
 end
 
@@ -304,59 +304,59 @@ function HZUtils:doDetector(player, item, hazardType, gain)
 end
 
 function HZUtils:doGeigerFalseAlarmCheck(player, geigerDetector)
-    if geigerDetector then 
+    if geigerDetector then
         HZ:stopAllGeigerSound(player)
-        
+
         local falsePositiveRoll = ZombRand(1,100)
         local falsePositiveGain = ZombRand(25, 90)
         local falsePositiveSettings = HZSettings.Items[geigerDetector:getType()]
         local falsePositiveTrigger = false
-        
-        if falsePositiveSettings then 
+
+        if falsePositiveSettings then
             if falsePositiveRoll < falsePositiveSettings.FalsePositiveRatio then
                 if isDebugEnabled() then
-                    print(string.format("[Geiger FALSE POSITIVE] %s has triggered a false positive alarm [gain=%d, roll=%d, ratio=%d]", geigerDetector:getType(),falsePositiveGain, falsePositiveRoll, falsePositiveSettings.FalsePositiveRatio))
+
                 end
                 HZUtils:doDetector(player, geigerDetector, "radiation", falsePositiveGain)
                 falsePositiveTrigger = true
             end
         end
-        
+
         -- normal radiation difference imitation
         if not falsePositiveTrigger then HZUtils:doDetector(player, geigerDetector, "radiation", ZombRand(5, 24)) end
     end
 end
 
 function HZUtils:doGasDetectorFalseAlarmCheck(player, gasDetector)
-    if gasDetector then 
+    if gasDetector then
         HZ:stopAllGasDetectorSound(player)
-        
+
         local falsePositiveRoll = ZombRand(100)
         local falsePositiveGain = ZombRand(25, 90)
         local falsePositiveSettings = HZSettings.Items[gasDetector:getType()]
         local falsePositiveTrigger = false
-        
-        if falsePositiveSettings then 
+
+        if falsePositiveSettings then
             if falsePositiveRoll < falsePositiveSettings.FalsePositiveRatio then
                 if isDebugEnabled() then
-                    print(string.format("[GasDetector FALSE POSITIVE] %s has triggered a false positive alarm [gain=%d, roll=%d, ratio=%d]", gasDetector:getType(),falsePositiveGain, falsePositiveRoll, falsePositiveSettings.FalsePositiveRatio))
+
                 end
                 HZUtils:doDetector(player, gasDetector, "biological", falsePositiveGain)
                 falsePositiveTrigger = true
             end
         end
-        
+
         -- normal radiation difference imitation
         if not falsePositiveTrigger then HZUtils:doDetector(player, gasDetector, "biological", ZombRand(5, 24)) end
     end
 end
 
-function HZUtils:setSoundAndMoodlesByGains(player, gains)  
+function HZUtils:setSoundAndMoodlesByGains(player, gains)
     local gasDetector = HZUtils:isPlayerHasActivatedItemEquippedByTag(player, "GasDetector")
     local geigerDetector = HZUtils:isPlayerHasActivatedItemEquippedByTag(player, "GeigerCounter")
-    
+
     HZ:hideAllDetectorMoodle()
-    
+
     for hazardType, gain in pairs(gains) do
         if (hazardType == "radiation") then
             if gain <= 25 then
@@ -367,7 +367,7 @@ function HZUtils:setSoundAndMoodlesByGains(player, gains)
                     HZ:stopAllGeigerSound(player)
                     HZUtils:doDetector(player, geigerDetector, "radiation", 5)
                 end
-            else 
+            else
                 HZ:stopAllGeigerSound(player)
                 HZUtils:doDetector(player, geigerDetector, "radiation", gain)
             end
